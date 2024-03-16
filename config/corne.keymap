@@ -8,14 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-// LAYERS
-#define DEFAULT 0
-#define SYM     1
-#define NAV     2
-#define NUM     3
-#define WIN     4
-#define JPN     5
-
 &mt {
   tapping-term-ms = <200>;
   flavor = "tap-preferred";
