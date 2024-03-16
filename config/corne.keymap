@@ -47,8 +47,8 @@
 //                    | HOM | TAB | RET |   | SPC | BSPC | END |
                         bindings = <
    &kp LALT   &kp EXCL &kp AT  &kp HASH &kp DOLLAR  &kp PERCENT      &kp TILDE &kp AMPS  &kp GRAVE  &kp LPAR &kp RPAR &kp MINUS 
-   &kp LSHFT  &kp F1   &kp F2  &kp F3   &kp F4      &kp F5           &kp PLUS  &kp MINUS &kp EQUALS &kp LBKT &kp RBKT 
-   &kp LCTRL  &kp F6   &kp F7  &kp F8   &kp F9      &kp F10          &kp ASTRK &kp SLASH &kp CARET  &kp LBRC &kp RBRC &kp SLASH 
+   &kp LSHFT  &kp F1   &kp F2  &kp F3   &kp F4      &kp F5           &kp PLUS  &kp MINUS &kp EQUALS &kp LBKT &kp RBKT &kp QMARK 
+   &kp LCTRL  &kp F6   &kp F7  &kp F8   &kp F9      &kp F10          &kp ASTRK &kp SLASH &kp CARET  &kp LBRC &kp RBRC &kp ESC 
                                &kp HOME &kp TAB     &kp RET          &kp SPACE &kp BSPC  &kp END 
                         >;
                 };
@@ -60,9 +60,9 @@
 // | CTRL |     |     |     |     |     |   |     |        |       |        |         | ESC       |
 //                    | HOM | TAB | RET |   | SPC | BSPC | END |
                         bindings = <
-   &kp LALT  &trans   &trans &trans   &trans   &trans      &trans &kp HOME &kp UP   &kp END   &kp PGUP  &kp K_SCROLL_UP 
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &trans &kp LEFT &kp DOWN &kp RIGHT &kp PGDN  &kp K_SCROLL_DOWN
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &trans &trans   &trans   &trans    &trans    &ESC 
+   &kp LALT  &trans   &trans &trans   &trans   &trans      &trans    &kp HOME  &kp UP   &kp END   &kp PGUP  &kp K_SCROLL_UP 
+   &kp LSHFT &trans   &trans &trans   &trans   &trans      &trans    &kp LEFT  &kp DOWN &kp RIGHT &kp PGDN  &kp K_SCROLL_DOWN
+   &kp LCTRL &trans   &trans &trans   &trans   &trans      &trans    &trans    &trans   &trans    &trans    &kp ESC 
                              &kp HOME &kp TAB  &kp RET     &kp SPACE &kp BSPC  &kp END 
                         >;
                 };
