@@ -36,12 +36,6 @@
             key-positions = <12 39>;
             bindings = <&kp BSPC>;
         };
-    };
-};
-
-/ {
-    combos {
-        compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <5000>;
             key-positions = <12 41>;
