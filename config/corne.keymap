@@ -111,8 +111,8 @@
 // | CTRL |     |     |     |     |     |   |     |        |       |        |    |    |
 //                    | HOM | TAB | RET |   | SPC | BSPC | END |
                         bindings = <
-   &kp LALT  &trans   &trans &trans   &trans   &trans      &trans &trans   &kp UP_WIN   &trans    &trans &trans
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &trans &kp LEFT_WIN  &kp DOWN_WIN &kp RIGHT_WIN  &trans &trans
+   &kp LALT  &trans   &trans &trans   &trans   &trans      &trans &trans   &trans   &trans    &trans &trans
+   &kp LCTRL &trans   &trans &trans   &trans   &trans      &trans &kp LEFT_WIN &trans &kp RIGHT_WIN  &trans &trans
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &trans &trans   &trans   &trans    &trans &trans
            &lt NUM HOME &lt SYM BSPC &kp SPACE   &lt WIN RET &lt NAV DEL &lt JPN END 
                         >;
