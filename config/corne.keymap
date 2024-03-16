@@ -22,6 +22,34 @@
 };
 
 
+// -----------------------------------------------------------------------------------------
+// | 0  |  1   |  2   |  3   |  4   |  5  |      |  6  |  7   |  8  |  9  |  10  | 11 |
+// | 12 |  13  |  14  |  15  |  16  |  17 |      |  18 |  19  |  20 |  21 |  22  | 23 |
+// | 24 |  25  |  26  |  27  |  28  |  29 |      |  30 |  31  |  32 |  33 |  34  | 35 |
+//                    | 36   |  37  |  38 |      |  39 |  40  |  41 |
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_space {
+            timeout-ms = <5000>;
+            key-positions = <12 39>;
+            bindings = <&kp BSPC>;
+        };
+    };
+};
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <5000>;
+            key-positions = <12 41>;
+            bindings = <&kp ESC>;
+        };
+    };
+};
+
 / {
         keymap {
                 compatible = "zmk,keymap";
@@ -36,7 +64,7 @@
    &kp LALT  &kp Q &kp W &kp E &kp R &kp T       &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
    &kp LSHFT &kp A &kp S &kp D &kp F &kp G       &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LCTRL &kp Z &kp X &kp C &kp V &kp B       &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-           &mt NUM HOME &mt SYM TAB &mt WIN RET  &kp SPACE &mt NAV BSPC &mt JPN END 
+           &lt NUM HOME &lt SYM TAB &lt WIN RET  &kp SPACE &lt NAV DEL &lt JPN END 
                         >;
                 };
 
@@ -50,7 +78,7 @@
    &kp LALT   &kp EXCL &kp AT  &kp HASH &kp DOLLAR  &kp PERCENT      &kp TILDE &kp AMPS  &kp GRAVE  &kp LPAR &kp RPAR &kp MINUS 
    &kp LSHFT  &kp F1   &kp F2  &kp F3   &kp F4      &kp F5           &kp PLUS  &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp QMARK 
    &kp LCTRL  &kp F6   &kp F7  &kp F8   &kp F9      &kp F10          &kp ASTRK &kp SLASH &kp CARET  &kp LBRC &kp RBRC &kp ESC 
-                       &mt NUM HOME &mt SYM TAB &mt WIN RET          &kp SPACE &mt NAV BSPC &mt JPN END 
+                       &lt NUM HOME &lt SYM TAB &lt WIN RET          &kp SPACE &lt NAV BSPC &lt JPN END 
                         >;
                 };
 
@@ -64,7 +92,7 @@
    &kp LALT  &trans   &trans &trans   &trans   &trans      &trans    &kp HOME  &kp UP   &kp END   &kp PGUP  &kp K_SCROLL_UP 
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &trans    &kp LEFT  &kp DOWN &kp RIGHT &kp PGDN  &kp K_SCROLL_DOWN
    &kp LCTRL &trans   &trans &trans   &trans   &trans      &trans    &trans    &trans   &trans    &trans    &kp ESC 
-             &mt NUM HOME &mt SYM TAB &mt WIN RET          &kp SPACE &mt NAV BSPC &mt JPN END 
+                      &lt NUM HOME &lt SYM TAB &lt WIN RET  &kp SPACE &lt NAV DEL &lt JPN END 
                         >;
                 };
 
@@ -78,7 +106,7 @@
    &kp LALT  &trans   &trans &trans   &trans   &trans      &trans    &kp KP_N7 &kp KP_N8 &kp KP_N9 &trans     &trans
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp MINUS &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp E      &trans
    &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp PERIOD &trans
-                 &mt NUM HOME &mt SYM TAB &mt WIN RET      &kp SPACE &mt NAV BSPC &mt JPN END 
+                     &lt NUM HOME &lt SYM TAB &lt WIN RET  &kp SPACE &lt NAV BSPC &lt JPN END 
                         >;
                 };
 
@@ -92,7 +120,7 @@
    &kp LALT  &trans   &trans &trans   &trans   &trans      &trans &trans   &kp UP   &trans    &trans &trans
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans
    &kp LCTRL &trans   &trans &trans   &trans   &trans      &trans &trans   &trans   &trans    &trans &trans
-                      &mt NUM HOME &mt SYM TAB &mt WIN RET      &kp SPACE &mt NAV BSPC &mt JPN END 
+                     &lt NUM HOME &lt SYM TAB &lt WIN RET  &kp SPACE &lt NAV BSPC &lt JPN END 
                         >;
                 };
 
@@ -106,7 +134,7 @@
    &kp LALT  &trans   &trans &trans   &trans   &trans           &trans &trans   &trans   &trans  &trans &trans
    &kp LSHFT &trans   &trans &trans   &trans   &trans           &trans &trans   &trans   &trans  &trans &trans
    &kp LCTRL &trans   &trans &trans   &trans   &trans           &trans &trans   &trans   &trans  &trans &trans
-                      &mt NUM HOME &mt SYM TAB &mt WIN RET      &kp SPACE &mt NAV BSPC &mt JPN END 
+                      &lt NUM HOME &lt SYM TAB &lt WIN RET      &kp SPACE &lt NAV BSPC &lt JPN END 
                         >;
                 };
         };
