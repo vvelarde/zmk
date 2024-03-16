@@ -58,7 +58,7 @@
    &kp LALT  &kp Q &kp W &kp E &kp R &kp T       &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
    &kp LSHFT &kp A &kp S &kp D &kp F &kp G       &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LCTRL &kp Z &kp X &kp C &kp V &kp B       &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-           &lt NUM HOME &lt SYM DEL &kp BSPC   &kp SPACE &lt NAV TAB &lt JPN END 
+           &lt NUM HOME &lt SYM DEL &kp BSPC     &kp SPACE &lt NAV TAB &lt JPN END 
                         >;
                 };
 
@@ -72,7 +72,7 @@
    &kp LALT   &kp EXCL &kp AT  &kp HASH &kp DOLLAR  &kp PERCENT      &kp TILDE &kp AMPS  &kp GRAVE  &kp LPAR &kp RPAR &kp MINUS 
    &kp LSHFT  &kp F1   &kp F2  &kp F3   &kp F4      &kp F5           &kp PLUS  &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp QMARK 
    &kp LCTRL  &kp F6   &kp F7  &kp F8   &kp F9      &kp F10          &kp ASTRK &kp SLASH &kp CARET  &kp LBRC &kp RBRC &kp ESC 
-           &lt NUM HOME &lt SYM DEL &kp BSPC   &kp SPACE &lt NAV TAB &lt JPN END 
+                       &lt NUM HOME &lt SYM DEL &kp BSPC             &kp SPACE &lt NAV TAB &lt JPN END 
                         >;
                 };
 
@@ -83,7 +83,7 @@
 // | CTRL |                |                |              |               |                |      |     |        |       |        |         | ESC      |
 //                    | HOM | TAB | RET |   | SPC | BSPC | END |
                         bindings = <
-   &kp LALT  &bp BT_CLR     &trans         &trans       &trans       &trans           &trans    &kp HOME  &kp UP   &kp END   &kp PGUP  &kp K_SCROLL_UP 
+   &kp LALT  &bt BT_CLR     &trans         &trans       &trans       &trans           &trans    &kp HOME  &kp UP   &kp END   &kp PGUP  &kp K_SCROLL_UP 
    &kp LSHFT &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &trans    &kp LEFT  &kp DOWN &kp RIGHT &kp PGDN  &kp K_SCROLL_DOWN
    &kp LCTRL &trans         &trans         &trans       &trans       &trans           &trans    &trans    &trans   &trans    &trans    &kp ESC 
            &lt NUM HOME &lt SYM DEL &kp BSPC   &kp SPACE &lt NAV TAB &lt JPN END 
