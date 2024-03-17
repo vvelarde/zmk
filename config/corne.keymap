@@ -32,12 +32,12 @@
         compatible = "zmk,combos";
         combo_tab {
             timeout-ms = <5000>;
-            key-positions = <24 38>;
+            key-positions = <12 38>;
             bindings = <&kp TAB>;
         };
         combo_esc {
             timeout-ms = <5000>;
-            key-positions = <24 39>;
+            key-positions = <12 39>;
             bindings = <&kp ESC>;
         };
     };
